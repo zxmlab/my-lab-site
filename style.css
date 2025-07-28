@@ -1,36 +1,207 @@
+/* 统一字体与页面结构 */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1000px;
   background: #fff;
   color: #333;
+  overflow-y: scroll;
 }
+
 header {
-  background: #003366;
-  color: white;
-  padding: 10px;
+  padding: 1em;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 10px;
 }
-nav ul {
+
+.header-top {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  margin-right: 20px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-main {
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: #fff;
   padding: 20px;
+  margin-bottom: 1.5em;
 }
+
+.header-top img.logo {
+  width: 120px;
+  height: 120px;
+}
+
+.header-top .title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-top .title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #003366;
+  margin: 5px 0;
+}
+
+.header-top .subtitle {
+  margin: 0;
+  font-size: 1em;
+  color: #003366;
+}
+
+/* 导航栏 */
+nav {
+  background-color: #003366;
+  padding: 10px 0;
+  border-radius: 12px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.4em 0.6em;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* 图片 */
+img.rounded {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+/* 主体内容 */
+main {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+main p {
+  margin-bottom: 1.5em;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+main ul {
+  padding-left: 1.5em;
+  margin-top: 1em;
+}
+
+main ul li {
+  margin-bottom: 1em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* 页脚 */
 footer {
   background: #f0f0f0;
   text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 1em;
+  font-size: 0.9em;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* 文章模块 */
+article {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2em;
+  gap: 1.5em;
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+article img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+article .info {
+  max-width: 600px;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  article .info {
+    max-width: 100%;
+  }
+}
+
+/* 🌙 暗黑模式 */
+html[data-theme="dark"] body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+html[data-theme="dark"] main {
+  background-color: #1e1e1e;
+}
+
+html[data-theme="dark"] header,
+html[data-theme="dark"] .header-top {
+  background-color: #1e1e1e;
+}
+
+html[data-theme="dark"] .title,
+html[data-theme="dark"] .subtitle {
+  color: #aad4ff;
+}
+
+html[data-theme="dark"] nav {
+  background-color: #222;
+}
+
+html[data-theme="dark"] .nav-links a {
+  color: #ccc;
+}
+
+html[data-theme="dark"] .nav-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+html[data-theme="dark"] footer {
+  background-color: #1e1e1e;
+  color: #aaa;
+}
+
+html[data-theme="dark"] article {
+  background-color: #2a2a2a;
+}
+
+html[data-theme="dark"] a {
+  color: #6ab4ff;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #9dd3ff;
 }

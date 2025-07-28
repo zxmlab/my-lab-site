@@ -1,31 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>People - My Lab</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>People</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/theme.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="join.html">Join Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>People</h1>
-    <ul>
-      <li>Dr. Jane Doe - Principal Investigator</li>
-      <li>John Smith - PhD Student</li>
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; 2025 My Lab</p>
-  </footer>
+    <header>
+        <div class="header-top">
+            <img class="logo" src="images/Logo.png" alt="实验室 Logo" />
+            <div class="title-block">
+                <div class="title">面孔认知与发展实验室</div>
+                <p class="subtitle">Face Perception and Development Lab</p>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">首页 / Home</a>
+                <a href="people.html">团队 / Team</a>
+                <a href="research.html">研究项目 / Research</a>
+                <a href="publications.html">发表文章 / Publication</a>
+                <a href="join.html">加入我们 / Join Us</a>
+            </div>
+        </nav>
+        <button id="theme-toggle" style="position: absolute; top: 1em; right: 1em;"> 🌙 暗黑模式</button>
+    </header>
+
+    <main>
+        <h2>PI</h2>
+        <section>
+            <article>
+                <img src="images/people-zhouxiaomei.jpg" alt="周小梅" />
+                <div class="info">
+                    <h3>周小梅</h3>
+                    <p>邮箱: <a href="mailto:xzhou@szu.edu.cn">xzhou@szu.edu.cn</a></p>
+                    <p>美国心理学会 APS 会员</p>
+                    <p>美国儿童发展研究学会 SRCD 会员</p>
+                    <p>国际婴儿研究学会 ICIS 会员</p>
+                    <p>国家教育部海外引才</p>
+                    <p>深圳市鹏城孔雀计划高层次 C 类</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>实验室建设</h2>
+            <ul>
+                <li>实验设备：
+                    <ul>
+                        <li>高精度便携式眼动仪（婴幼儿、儿童）49万</li>
+                        <li>婴儿便携式近红外光学成像仪（BabyBrite）45万</li>
+                    </ul>
+                </li>
+                <li>算力资源：
+                    <ul>
+                        <li>高性能工作站：极速处理行为、视频、眼动、大脑血氧动力等脑认知数据</li>
+                        <li>台式、一体机、笔记本电脑</li>
+                    </ul>
+                </li>
+                <li>软件及测试量表：
+                    <ul>
+                        <li>社会适应 ABBA 适应量表</li>
+                        <li>ADOS 孤独症诊断量表（金标准）</li>
+                        <li>PsychoPy、Matlab、AI 人脸检测算法、Morph 平均脸计算</li>
+                    </ul>
+                </li>
+                <li>科研经费充足：
+                    <ul>
+                        <li>国自然、广东省基金项目、加拿大工程研究项目 NSERC</li>
+                        <li>深圳市鹏城孔雀特聘岗位科研启动金</li>
+                        <li>国家海外引才科研启动金</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ZXMLab | 面孔认知与发展实验室</p>
+    </footer>
+
+
 </body>
+
 </html>
